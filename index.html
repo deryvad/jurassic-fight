@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      For phones: the page is shown at its own size and is not to be pinched or
+      scrolled about, it reaches under a notch, and put on a home screen it
+      opens with no browser round it. A desktop takes no notice of any of this.
+    -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Jurassic Fight" />
+    <title>Jurassic Fight</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #e9e4d8;
+        --dim: #8a8578;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        padding: 20px;
+        background: #14110d;
+        color: var(--ink);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+      canvas {
+        width: min(100%, 1280px);
+        height: auto;
+        aspect-ratio: 16 / 9;
+        display: block;
+        border: 1px solid #2e2921;
+        border-radius: 4px;
+        image-rendering: pixelated;
+        background: #0d0b08;
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-CTvbs_o3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DoSTLFNT.css">
+  </head>
+  <body>
+    <canvas id="game" width="1280" height="720"></canvas>
+  </body>
+</html>

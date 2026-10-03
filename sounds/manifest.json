@@ -1,0 +1,6 @@
+{
+  "roar": { "file": "roar.mp3", "from": 0.42, "seconds": 1.85, "body": 0.08, "level": 0.3 },
+  "bellow": { "file": "bellow.mp3", "from": 1.57, "seconds": 1.2, "body": 0.08, "level": 0.3 },
+  "screech": { "file": "screech.mp3", "from": 0.03, "seconds": 2.4, "body": 0.05, "level": 0.3, "clear": 700 },
+  "hiss": { "file": "hiss.mp3", "from": 4.5, "seconds": 3.5, "body": 0.1, "level": 0.14, "clear": 350 }
+}
