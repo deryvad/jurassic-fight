@@ -10,7 +10,7 @@
  * and a new name means a new cache, filled afresh, and the old one thrown
  * away — once per publish, and never between.
  */
-const CACHE = 'jurassic-fight-20261007211825';
+const CACHE = 'jurassic-fight-20261007211950';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
