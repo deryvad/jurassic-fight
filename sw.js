@@ -10,7 +10,7 @@
  * and a new name means a new cache, filled afresh, and the old one thrown
  * away — once per publish, and never between.
  */
-const CACHE = 'jurassic-fight-20261007212546';
+const CACHE = 'jurassic-fight-20261007213002';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -32,8 +32,11 @@ self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) return;
   if (request.mode === 'navigate') {
+    // Asked of the server every time, not the browser's own store, which a
+    // site may have been told to keep a page in for a while: a new build is
+    // then had by the next reload, not ten minutes after.
     event.respondWith(
-      fetch(request)
+      fetch(request.url, { cache: 'no-cache', credentials: 'same-origin' })
         .then((response) => {
           const copy = response.clone();
           caches.open(CACHE).then((cache) => cache.put('./index.html', copy));
