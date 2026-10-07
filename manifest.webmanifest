@@ -1,6 +1,6 @@
 {
   "name": "Jurassic Fight",
-  "short_name": "Jurassic",
+  "short_name": "Jurassic Fight",
   "description": "A dinosaur fighting game: ten dinosaurs, sixty-five million years of frame data.",
   "start_url": "./",
   "scope": "./",
