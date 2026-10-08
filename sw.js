@@ -15,8 +15,8 @@
  * The page itself is fetched afresh whenever there is a connection, so a new
  * build is played on the very next visit; without one, the kept page is used.
  */
-const CACHE = 'jurassic-fight-20261008143540';
-const FILES = 'apple-touch-icon.png assets/index-DR_9YVg5.css assets/index-Dh_IOsMJ.js icon-192.png icon-512.png index.html manifest.webmanifest models/brood.glb models/bulwark.glb models/dome.glb models/gale.glb models/havoc.glb models/scythe.glb models/trike.glb models/tyrant.glb models/venom.glb models/verdant.glb sounds/CREDITS.md sounds/bellow.mp3 sounds/hiss.mp3 sounds/manifest.json sounds/roar.mp3 sounds/screech.mp3';
+const CACHE = 'jurassic-fight-20261008170037';
+const FILES = 'apple-touch-icon.png assets/index-Bv-NJxbo.js assets/index-DR_9YVg5.css icon-192.png icon-512.png index.html manifest.webmanifest models/brood.glb models/bulwark.glb models/dome.glb models/gale.glb models/havoc.glb models/scythe.glb models/trike.glb models/tyrant.glb models/venom.glb models/verdant.glb sounds/CREDITS.md sounds/bellow.mp3 sounds/hiss.mp3 sounds/manifest.json sounds/roar.mp3 sounds/screech.mp3';
 /**
  * The files of this build — or nothing, in a build that was never published
  * and so was never given its list: that one keeps what it is asked for, as it
